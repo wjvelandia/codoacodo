@@ -1,56 +1,92 @@
 <!DOCTYPE html>
-<html>
-
-</style>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
 
-<div class="grid-container">
-  <div class="grid-item1">uno</div>
-  <div class="grid-item2">dos</div>
-  <div class="grid-item3">tres</div>
-  <div class="grid-item4">cuatro</div>
-  
-</div>
+    <!-- menu y busqueda -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Codo a Codo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Desactivado" href="javascript:void(0)">Desactivado</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Buscar">
+              <button class="btn btn-primary" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- cards -->
+      <div class="card-group">
+        <div class="card">
+          <img src="images/html.jfif" class="htmlimage" alt="html">
+          <div class="card-body">
+            <h5 class="card-title">titulo 1</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Ultima actualización!</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/css3-custom-properties.png" class="cssimage" alt="css">
+          <div class="card-body">
+            <h5 class="card-title">titulo 2</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Ultima actualización!</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/bootstrap-social-share.png" class="bootstrapimage" alt="bootstrap">
+          <div class="card-body">
+            <h5 class="card-title">titulo 3</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Ultima actualización!</small></p>
+          </div>
+        </div>
+      </div>
 
+      <!-- formulario -->
+
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          <p>Nunca comparta su email.</p>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Verificar
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
-<head>
-<style>
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 400px 400px 400px 400px;
-  grid-template-columns: 400px 400px 400px 400px;
-  grid-gap: 15px;
-  font-size: 1cm;
-}
-
-.grid-item1 {
-  background: red;
-  text-align: left;
-  color: yellow;
-  font-size: 1cm;
-  
-}
-
-.grid-item2 {
-  background: black;
-  text-align: left;
-  color: white;
-  font-weight: 200;
-}
-
-.grid-item3 {
-  background: red;
-  text-align: left;
-  color: yellow;
-  font-weight: 200;
-}
-
-.grid-item4 {
-  background: red;
-  text-align: left;
-  color: yellow;
-  font-weight: 200;
-}
-
+</html>
